@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+.has-vertically-aligned-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", Lato, Tahoma, sans-serif;
+  width: 100%;
+  min-height: 100%;
+}
+
+.header-wrapper {
+  padding-bottom: 30px;
+}
+
+.hero {
+  background-image: url("https://i.loli.net/2021/10/03/thdUINKyPJwuWH8.jpg");
+  /* background: linear-gradient(rgba(102, 129, 216, 0.1), rgba(102, 129, 216, 0.1)), */
+  background: linear-gradient(rgba(212, 202, 60, 0.1), rgba(212, 202, 60, 0.1)),
+    rgba(0, 0, 0, 0.88) url("https://i.loli.net/2021/10/03/thdUINKyPJwuWH8.jpg")
+      no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: white;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-family: "Poppins", sans-serif;
+}
+
+.hero .title {
+  font-family: "Kaushan Script", sans-serif;
+  transform: rotate(-5deg);
+  font-size: 5rem;
+  color: whitesmoke;
+}
+
+.hero .subtitle {
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.subheading {
+  font-size: 0.9rem;
+}
+
+.service-text {
+  font-size: 0.5rem;
+}
+
+.hero .profession {
+  padding-top: 50px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.hero .hero-foot {
+  height: 50px;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+}
+
+@media (max-width: 599px) {
+  .hero .hero-foot {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.hero .hero-foot .hero-foot--wrapper {
+  margin: 7px auto;
+  height: 50px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
+  line-height: 38px;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
+  border-bottom: 2px solid #1f2c6c;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
+  color: #1f2c6c;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
+  color: #1f2c6c;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #1f2c6c;
+}
+
+.main-content {
+  padding-top: 2rem;
+  color: #3c4172;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-content .section-dark {
+  background-color: #f0f3f5;
+  padding: 60px 0px;
+}
+
+.main-content .section-dark.quarters {
+  height: 380px;
+  padding-top: 100px;
+  background-image: url("https://i.loli.net/2021/10/06/x7T3kYwVPUirDS5.jpg");
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  /* height: 30vh; */
+  /* background-attachment: scroll;ss */
+}
+@media (min-width: 1407px) {
+  .main-content .section-dark.quarters {
+    background-position: 0px -200px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .section-dark.quarters {
+    background-image: none;
+    height: 300px;
+  }
+  h1 {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  .p {
+    padding-top: 0 !important;
+  }
+}
+
+.main-content .section-dark.quarters .title {
+  padding: 20px;
+}
+
+.main-content .section-dark.quarters button {
+  border: 2px solid #43485c;
+  background: white;
+  color: #43485c;
+  height: 50px;
+  width: 250px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.main-content .section-dark.quarters .fa-download {
+  color: #1f2c6c;
+}
+
+.main-content .section-dark.facility {
+  padding: 120px;
+}
+
+@media (max-width: 599px) {
+  .main-content .section-dark.facility {
+    padding: 75px 20px;
+  }
+}
+
+.main-content .section-dark.facility .facility-item {
+  margin-bottom: 0.6rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
+.main-content .section-dark.facility .facility-item:hover {
+  -webkit-transform: scale(1.055) translateY(-2px);
+  transform: scale(1.055) translateY(-2px);
+  -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+  box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #apartment-img {
+    background-image: url("https://i.loli.net/2021/10/06/dmSHKtOaADqJN27.jpg");
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+#carpark-img {
+  background-image: url("https://i.loli.net/2021/10/06/DmMTYKL2cIyAp8a.jpg");
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left center;
+  background-size: cover;
+}
+
+#chartdiv {
+  /* width: 40vw; */
+  height: 400px;
+}
+
+.main-content .section-light {
+  padding: 30px;
+}
+
+.main-content .section-light.develop {
+  padding-bottom: 100px;
+}
+
+.main-content .section-light.develop .is-larger {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 599px) {
+  .main-content .section-light.develop .develop-links {
+    text-align: center;
+  }
+}
+
+.main-content .section-light.develop .right-image img {
+  border-radius: 11px;
+  margin: 20px;
+  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
+@media (max-width: 599px) {
+  .main-content .section-light.develop .right-image img {
+    margin: auto;
+  }
+}
+
+.main-content .section-light.apartment {
+  padding: 100px;
+}
+
+.apartment-chart {
+  height: 300px;
+}
+
+@media (max-width: 599px) {
+  .main-content .section-light.apartment {
+    padding: 50px 20px 40px 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-content .section-light.apartment h1 {
+  padding: 10px;
+}
+
+.utilities-item {
+  font-size: 0.9rem;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.main-content .section-light.contact {
+  padding: 200px;
+}
+
+.main-content .section-light.contact button {
+  width: 100%;
+  background-color: #43485c;
+  color: white;
+  height: 50px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 599px) {
+  .main-content .section-light.contact {
+    padding: 60px 20px;
+  }
+}
+
+.main-content .section-color.transport {
+  padding: 100px;
+  background-color: #43485c;
+  color: white;
+}
+
+.main-content .section-color.transport .title,
+.main-content .section-color.transport .subtitle {
+  color: white;
+}
+
+.main-content .section-color.transport i {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.transport-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.transport-card {
+  background-color: rgba(235, 255, 252, 0.712);
+}
+.main-content .section-title {
+  color: #43485c;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100vw;
+  padding: 0;
+  height: 80px;
+  line-height: 25px;
+  text-align: center;
+  background: #1f2c6c;
+  color: whitesmoke;
+  padding-top: 2rem;
+}
+
+.footer a {
+  padding: 0rem 1rem 1rem 1rem;
+  color: lightgrey;
+}
+
+.footer a i {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+}
+
+.footer a .nav-item {
+  color: whitesmoke;
+}
+
+.fa-download {
+  color: #43485c;
+}
+
+#toTop {
+  height: 50px;
+  width: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(31, 44, 108, 0.65);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+}
+
+.map {
+  height: 100%;
+}
+
+#toTop a {
+  color: white;
+}
+
+#toTop:hover {
+  background-color: #43485c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(245, 245, 245, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #43485c;
+}
+
+body.preloader-site {
+  overflow: hidden;
+}
+
+.preloader-wrapper {
+  height: 100%;
+  width: 100%;
+  background: #1f2c6c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+
+.white {
+  color: ghostwhite;
+}
+
+a {
+  color: #3c4172;
+}
+
+a:hover {
+  color: #00d1b2;
+}
+
+@media (max-width: 768px) {
+  #carpark,
+  #transport {
+    padding: 2rem;
+  }
+}
